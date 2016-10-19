@@ -1,9 +1,7 @@
-﻿namespace LearningWpfCaliburnMicro {
+﻿namespace $rootnamespace$ {
     using System;
     using System.Collections.Generic;
     using Caliburn.Micro;
-    using MyApp;
-    using Color;
 
     public class AppBootstrapper : BootstrapperBase {
         SimpleContainer container;
@@ -17,8 +15,7 @@
 
             container.Singleton<IWindowManager, WindowManager>();
             container.Singleton<IEventAggregator, EventAggregator>();
-            container.PerRequest<MyAppViewModel, MyAppViewModel>();
-            container.PerRequest<ColorViewModel, ColorViewModel>();
+            container.PerRequest<IShell, ShellViewModel>();
         }
 
         protected override object GetInstance(Type service, string key) {
@@ -38,7 +35,7 @@
         }
 
         protected override void OnStartup(object sender, System.Windows.StartupEventArgs e) {
-            DisplayRootViewFor<MyAppViewModel>();
+            DisplayRootViewFor<IShell>();
         }
     }
 }

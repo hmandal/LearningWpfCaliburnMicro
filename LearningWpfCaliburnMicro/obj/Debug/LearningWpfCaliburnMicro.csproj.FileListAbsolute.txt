@@ -28,3 +28,5 @@ D:\Harman\Self_Paced_Learning\WPF\LearningWpfCaliburnMicroSoln\LearningWpfCalibu
 D:\Harman\Self_Paced_Learning\WPF\LearningWpfCaliburnMicroSoln\LearningWpfCaliburnMicro\obj\Debug\Color\ColorView.baml
 D:\Harman\Self_Paced_Learning\WPF\LearningWpfCaliburnMicroSoln\LearningWpfCaliburnMicro\obj\Debug\MyApp\PurpleScreenView.g.cs
 D:\Harman\Self_Paced_Learning\WPF\LearningWpfCaliburnMicroSoln\LearningWpfCaliburnMicro\obj\Debug\MyApp\PurpleScreenView.baml
+D:\Harman\Self_Paced_Learning\WPF\LearningWpfCaliburnMicroSoln\LearningWpfCaliburnMicro\obj\Debug\ShellView.baml
+D:\Harman\Self_Paced_Learning\WPF\LearningWpfCaliburnMicroSoln\LearningWpfCaliburnMicro\obj\Debug\ShellView.g.cs
