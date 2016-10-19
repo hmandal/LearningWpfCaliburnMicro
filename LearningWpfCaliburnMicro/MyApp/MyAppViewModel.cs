@@ -19,14 +19,28 @@ namespace LearningWpfCaliburnMicro.MyApp
 
         }
 
+        public MyAppViewModel(IWindowManager windowManager, ColorViewModel colorModel)
+        {
+            _windowManager = windowManager;
+            ColorModel = colorModel;
+        }
+
         [ImportingConstructor]
-        public MyAppViewModel(ColorViewModel colorModel, IEventAggregator events)
+        public MyAppViewModel(IWindowManager windowManager, ColorViewModel colorModel, IEventAggregator events)
         {
             ColorModel = colorModel;
 
             // Get the event aggregator through the constructor and subscribe this ColorViewModel so it can listen for ColorEvent messages.
             events.Subscribe(this);
+
+            _windowManager = windowManager;
         }
+
+        public void NewWindow()
+        {
+            _windowManager.ShowWindow(new MyAppViewModel(_windowManager, ColorModel));
+        }
+
 
         private int _Count = 50;
 
@@ -56,6 +70,8 @@ namespace LearningWpfCaliburnMicro.MyApp
 
 
         private SolidColorBrush _Color;
+
+        private readonly IWindowManager _windowManager;
 
         public ColorViewModel ColorModel { get; private set; }
 

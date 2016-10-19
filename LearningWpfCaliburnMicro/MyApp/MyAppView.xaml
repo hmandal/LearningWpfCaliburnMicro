@@ -29,6 +29,7 @@
         <StackPanel Orientation="Horizontal" Grid.Row="3">
             <ContentControl Name="ColorModel" Margin="10" />
             <Rectangle Grid.Row="3" Width="100" Height="100" Fill="{Binding Color}" />
+            <Button Name="NewWindow" Content="New Window"/>
         </StackPanel>
     </Grid>
 </UserControl>
