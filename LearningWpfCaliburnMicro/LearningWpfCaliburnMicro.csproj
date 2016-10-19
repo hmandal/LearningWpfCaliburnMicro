@@ -92,6 +92,10 @@
     <Compile Include="MyApp\MyAppView.xaml.cs">
       <DependentUpon>MyAppView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MyApp\PurpleScreenView.xaml.cs">
+      <DependentUpon>PurpleScreenView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyApp\PurpleScreenViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -125,6 +129,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MyApp\MyAppView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyApp\PurpleScreenView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

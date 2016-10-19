@@ -28,8 +28,10 @@
         <Slider Name="Delta" Grid.Row="2" Minimum="0" Maximum="5" Foreground="Black" TickFrequency="1" TickPlacement="Both" IsSnapToTickEnabled="True" />
         <StackPanel Orientation="Horizontal" Grid.Row="3">
             <ContentControl Name="ColorModel" Margin="10" />
+            <ContentControl Name="ActiveItem" Margin="10" />
             <Rectangle Grid.Row="3" Width="100" Height="100" Fill="{Binding Color}" />
             <Button Name="NewWindow" Content="New Window"/>
+            <Button Name="ShowPurpleScreen" Content="Change Screen to Purple"/>
         </StackPanel>
     </Grid>
 </UserControl>

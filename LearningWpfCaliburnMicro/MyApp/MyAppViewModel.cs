@@ -11,7 +11,7 @@ using System.Windows.Media;
 namespace LearningWpfCaliburnMicro.MyApp
 {
     [Export(typeof(MyAppViewModel))]
-    public class MyAppViewModel : PropertyChangedBase, IHandle<ColorEvent>
+    public class MyAppViewModel : Conductor<object>, IHandle<ColorEvent>
     {
         //for supporting DesignInstance
         public MyAppViewModel()
@@ -34,6 +34,11 @@ namespace LearningWpfCaliburnMicro.MyApp
             events.Subscribe(this);
 
             _windowManager = windowManager;
+        }
+
+        public void ShowPurpleScreen()
+        {
+            ActivateItem(new PurpleScreenViewModel());
         }
 
         public void NewWindow()
