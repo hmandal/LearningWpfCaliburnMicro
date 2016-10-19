@@ -1,6 +1,8 @@
-﻿namespace LearningWpfCaliburnMicro.MyApp
+﻿using Caliburn.Micro;
+
+namespace LearningWpfCaliburnMicro.MyApp
 {
-    internal class PurpleScreenViewModel
+    public class PurpleScreenViewModel: Screen
     {
         public PurpleScreenViewModel()
         {
